@@ -1,0 +1,261 @@
+﻿@{
+    ViewData["Title"] = "FAQ's";
+}
+
+
+<style>
+
+    p {
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .faqs-container {
+        font-family: "Roboto", sans-serif;
+        max-width: 1200px;
+        margin-top: 40px;
+    }
+
+        .faqs-container .questions-container {
+            box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.3);
+            background: #03071e;
+        }
+
+        .faqs-container .faq-header {
+            display: flex;
+            color: #f1faee;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+        }
+
+            .faqs-container .faq-header .open,
+            .faqs-container .faq-header .close {
+                position: absolute;
+                right: 0;
+                padding: 0px 32px;
+                font-size: 22px;
+                font-weight: bold;
+                transform: translateY(-8px);
+                opacity: 0;
+                transition: all 500ms;
+            }
+
+                .faqs-container .faq-header .open.active,
+                .faqs-container .faq-header .close.active {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+
+            .faqs-container .faq-header h3 {
+                font-size: 20px;
+                padding: 0 32px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+            }
+
+        .faqs-container .content {
+            padding: 0 32px;
+            background: #339FFF;
+            color: #000000;
+            line-height: 1.5;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 500ms;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: justify;
+        }
+
+            .faqs-container .content.active {
+                max-height: 600px;
+            }
+
+</style>
+
+<div class="container mt-5">
+
+    <div class="row justify-content-center align-items-center">
+        <div>
+
+            <center class="mt-4">
+                <h1>Frequently Asked Question</h1>
+
+
+                <div class="faqs-container">
+
+                    <div class="questions-container">
+                        <div class="content-container">
+                            <div class="faq-header">
+                                <h3>What is event management system?</h3>
+                                <span class="open active">+</span>
+                                <span class="close">-</span>
+                            </div>
+
+                            <div class="content">
+                                <p>
+                                    Event management software is technology that helps organizations manage their in-person, online, hybrid,
+                                    and on-demand events. Event management software helps with all aspects of the event, including event goals,
+                                    planning, agendas, registration, attendance, check-in, engagement, data capture, follow-up, and conversion.
+                                    Some event management software products include event intelligence capabilities, which enable event organizers
+                                    to create more and more personalized events, with higher attendance levels, higher conversion rates, and
+                                    increasing levels of ROI.
+                                </p>
+
+                            </div>
+                        </div>
+
+                        <div class="faq-header">
+                            <h3>What is Event Intelligence Software?</h3>
+                            <span class="open active">+</span>
+                            <span class="close">-</span>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Event intelligence software helps event planners, organizers, executives, and business people optimize their events and
+                                event ROI by analyzing and presenting their attendance levels, engagement, and conversion rates in minutes instead of
+                                weeks or months. qThe more sophisticated event intelligence products provide tremendous insight into how events can be
+                                improved over time.
+                            </p>
+
+                        </div>
+
+                        <div class="faq-header">
+                            <h3>Who Uses Event Management Software?</h3>
+                            <span class="open active">+</span>
+                            <span class="close">-</span>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Event Management Team can use this software to conduct event smoothly and can register the event easily by clicking few
+                                buttons only. Users can search the event that posted also.
+                            </p>
+
+                        </div>
+
+                        <div class="faq-header">
+                            <h3>Why do I need an event planner?</h3>
+                            <span class="open active">+</span>
+                            <span class="close">-</span>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                This question is often the first of many people who are considering hiring an event planner. They want to be willing to
+                                consider the expense but aren’t sure what the benefits are. This is your chance to sell them on everything that you
+                                have to offer. Point out that event planners are professionals at planning—they have the expertise and resources to
+                                make things easy for everyone and get the best outcome possible. Event planners can be used for a lot more than people
+                                think, and they’re a lot more affordable and useful than some realize. Make a point of that here and be sure to point
+                                out that the biggest perk is that things will be planned seamlessly with no stress on their part.
+
+                            </p>
+
+                        </div>
+
+                        <div class="faq-header">
+                            <h3>Are we charge for the services?</h3>
+                            <span class="open active">+</span>
+                            <span class="close">-</span>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                No. We aim to reduce the workload of people who act as event organizer so that we are promised to provide an event
+                                management system that are free to use for the people. People also don’t have to worry that there will be hidden
+                                charges or anything like that.
+                            </p>
+
+                        </div>
+
+                        <div class="faq-header">
+                            <h3>What if there’s an emergency? Can we change the date or details without additional fees?</h3>
+                            <span class="open active">+</span>
+                            <span class="close">-</span>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Yes. As long as we provide the software with no charges, people can always make changes on their event that has
+                                posted on the website no matter is on emergency level or not.
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="faq-header">
+                            <h3>Can i use the system as a guest?</h3>
+                            <span class="open active">+</span>
+                            <span class="close">-</span>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Yes. We are allowed people to view the event that provided but if people want to register or create an new event,
+                                they need to register an user account first.
+                            </p>
+
+                        </div>
+
+                        <div class="faq-header">
+                            <h3>If I have any questions, who can I contact?</h3>
+                            <span class="open active">+</span>
+                            <span class="close">-</span>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                People can contact to our admin through the chat box that given on right bottom of the webpage.
+                            </p>
+
+                        </div>
+
+
+                        <div class="faq-header">
+                            <h3>Is there a mobile app version of this system I can download?</h3>
+                            <span class="open active">+</span>
+                            <span class="close">-</span>
+                        </div>
+
+                        <div class="content">
+                            <p>
+                                Sorry for now we are not provided any mobile version on IOS store or Google App store. We only
+                                provide website version on this time. However, we will send notification to all of the registered
+                                user when we provided mobile version of this system in the future.
+                            </p>
+
+                        </div>
+
+
+                        <div class="content-container">
+                            <div class="faq-header">
+                                <h3>Does any skillsets need to be equipped before using the system?</h3>
+                                <span class="open active">+</span>
+                                <span class="close">-</span>
+                            </div>
+
+                            <div class="content">
+                                <p>
+                                    Definitely no. Our system is easy to use. People can just search any event, create new event
+                                    or other functions that provided in the system by clicking the button. It will be so user-friendly.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <script src="~/js/FAQSect.js"></script>
+
+
+
+
+
+            </center>
+        </div>
+    </div>
+
+</div>
